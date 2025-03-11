@@ -2,7 +2,7 @@
 //  MarshallCryptoCurrencyApp.swift
 //  MarshallCryptoCurrency
 //
-//  Created by Israel Gutiérrez Castillo on 4.3.2025.
+//  Created by Israel Gutiérrez Castillo.
 //
 
 import SwiftUI
@@ -11,7 +11,7 @@ import SwiftUI
 struct MarshallCryptoCurrencyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }

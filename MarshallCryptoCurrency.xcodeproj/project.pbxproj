@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7F0BB0272D7F87F9006BAA75 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 7F0BB0262D7F87F9006BAA75 /* Readme.md */; };
+		7FDB49912D773CAA0029366B /* CryptoCurrencyService in Frameworks */ = {isa = PBXBuildFile; productRef = 7FDB49902D773CAA0029366B /* CryptoCurrencyService */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		7FE6E9292D773954007F4BD1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F0BB0262D7F87F9006BAA75 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		7FE6E9182D773953007F4BD1 /* MarshallCryptoCurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarshallCryptoCurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FE6E9282D773954007F4BD1 /* MarshallCryptoCurrencyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarshallCryptoCurrencyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FE6E9322D773954007F4BD1 /* MarshallCryptoCurrencyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarshallCryptoCurrencyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,11 +46,6 @@
 			path = MarshallCryptoCurrencyTests;
 			sourceTree = "<group>";
 		};
-		7FE6E9352D773954007F4BD1 /* MarshallCryptoCurrencyUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MarshallCryptoCurrencyUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FDB49912D773CAA0029366B /* CryptoCurrencyService in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +77,9 @@
 		7FE6E90F2D773953007F4BD1 = {
 			isa = PBXGroup;
 			children = (
+				7F0BB0262D7F87F9006BAA75 /* Readme.md */,
 				7FE6E91A2D773953007F4BD1 /* MarshallCryptoCurrency */,
 				7FE6E92B2D773954007F4BD1 /* MarshallCryptoCurrencyTests */,
-				7FE6E9352D773954007F4BD1 /* MarshallCryptoCurrencyUITests */,
 				7FE6E9192D773953007F4BD1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +114,7 @@
 			);
 			name = MarshallCryptoCurrency;
 			packageProductDependencies = (
+				7FDB49902D773CAA0029366B /* CryptoCurrencyService */,
 			);
 			productName = MarshallCryptoCurrency;
 			productReference = 7FE6E9182D773953007F4BD1 /* MarshallCryptoCurrency.app */;
@@ -153,9 +156,6 @@
 			dependencies = (
 				7FE6E9342D773954007F4BD1 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				7FE6E9352D773954007F4BD1 /* MarshallCryptoCurrencyUITests */,
-			);
 			name = MarshallCryptoCurrencyUITests;
 			packageProductDependencies = (
 			);
@@ -195,6 +195,9 @@
 			);
 			mainGroup = 7FE6E90F2D773953007F4BD1;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				7FDB498F2D773CAA0029366B /* XCLocalSwiftPackageReference "../CryptoCurrencyService" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7FE6E9192D773953007F4BD1 /* Products */;
 			projectDirPath = "";
@@ -212,6 +215,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F0BB0272D7F87F9006BAA75 /* Readme.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +333,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -384,6 +389,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 6.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -396,6 +402,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MarshallCryptoCurrency/Preview Content\"";
+				DEVELOPMENT_TEAM = SSVR943U99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -403,6 +410,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -424,6 +432,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MarshallCryptoCurrency/Preview Content\"";
+				DEVELOPMENT_TEAM = SSVR943U99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -431,6 +440,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -552,6 +562,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		7FDB498F2D773CAA0029366B /* XCLocalSwiftPackageReference "../CryptoCurrencyService" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../CryptoCurrencyService;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7FDB49902D773CAA0029366B /* CryptoCurrencyService */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CryptoCurrencyService;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7FE6E9102D773953007F4BD1 /* Project object */;
 }
