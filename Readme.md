@@ -41,9 +41,13 @@ To successfully compile and run the app you will need to:
 
 * Install Xcode 16 or higher, as the app was developed using Swift 6.0 and the minimum deployment is iOS 18
 
-* Download MCNetworkService, CryptoCurrencyService and MarshallCryptoCurrency into the same directory
+* Download/clone MarshallCryptoCurrency from here: 
+
+            https://github.com/IsraelGtz/MarshallCryptoCurrency.git
+            
+* Open 'MarshallCryptoCurrency.xcodeproj'. After that go to 'File -> Add Package Dependencies...' in the new window search for "https://github.com/IsraelGtz/CryptoCurrencyService.git". After found it press "Add Package". Automatically should add 'CryptoCurrencyService' and 'MCNetworkService' packages into the project.
 
 * You will probably need to change the developer team inside Xcode for the signing process
 
-* When you open "MarshallCryptoCurreny" remember to close the other two services as having dependencies open may cause weird behaviour in Xcode 16
+* If you plan to check the packages in Xcode remember to open one by one as Xcode has sometimes weird behaviour when a project and its dependencies are open at the same time.
 
