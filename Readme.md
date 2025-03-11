@@ -43,11 +43,25 @@ To successfully compile and run the app you will need to:
 
 * Download/clone MarshallCryptoCurrency from here: 
 
-            https://github.com/IsraelGtz/MarshallCryptoCurrency.git
+         https://github.com/IsraelGtz/MarshallCryptoCurrency.git
             
 * Open 'MarshallCryptoCurrency.xcodeproj'. After that go to 'File -> Add Package Dependencies...' in the new window search for "https://github.com/IsraelGtz/CryptoCurrencyService.git". After found it press "Add Package". Automatically should add 'CryptoCurrencyService' and 'MCNetworkService' packages into the project.
 
 * You will probably need to change the developer team inside Xcode for the signing process
 
 * If you plan to check the packages in Xcode remember to open one by one as Xcode has sometimes weird behaviour when a project and its dependencies are open at the same time.
+
+## Extra information
+
+* The link for 'MCNetworkService' repository is:
+
+         https://github.com/IsraelGtz/MCNetworkService.git
+
+* The link for 'CryptoCurrencyService' repository is:
+
+         https://github.com/IsraelGtz/CryptoCurrencyService.git
+
+
+
+Thanks for giving me the opportunity to work on this code assigment. It was really fun!
 
